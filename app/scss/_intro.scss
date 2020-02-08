@@ -1,0 +1,88 @@
+/*Intro
+======================= */
+.intro{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 900px;
+  padding-top: 100px;
+
+  background:#8d9499;
+  background-size: cover;
+  background: linear-gradient(rgba(37, 37, 37, 0.33), rgba(37, 37, 37, 0.33)), url("../img/intro/simon-migaj-Yui5vfKHuzs-unsplash.png") center no-repeat;
+}
+
+
+
+.intro__inner{
+  width: 100%;
+  max-width: 970px;
+  margin: 0 auto;
+  //padding-top: 150px;
+  text-align: center;
+}
+
+.intro__title{
+ // margin-top: 50px;
+
+  font-family: $main-font;
+  font-size: 100px;
+  line-height: 1.1;
+  color: $top-color;
+  font-weight: 700;
+  //text-transform: uppercase;
+}
+
+.intro__subtitle{
+  margin-bottom: 20px;
+
+  font-size: 30px;
+  color: $top-color;
+  line-height: 1.5;
+  letter-spacing: 4.2px;
+  font-weight: 400;
+}
+
+/* Burger */
+.burger{
+  display: none;
+  padding: 9px 2px;
+
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.burger__item{
+  display: block;
+  width: 30px;
+  height: 3px;
+
+  background: $top-color;
+
+  font-size: 0;
+  color: transparent;
+
+  position: relative;
+}
+.burger__item:before,
+.burger__item:after{
+  content: "";
+  width: 100%;
+  height: 100%;
+
+  background-color: $top-color;
+
+  position: absolute;
+  left: 0;
+  z-index: 1;
+}
+
+.burger__item:before{
+  top: -8px;
+}
+
+.burger__item:after{
+  bottom: -8px;
+}
+
