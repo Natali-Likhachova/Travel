@@ -1,0 +1,31 @@
+/*About
+======================= */
+.about__inner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about__text{
+  padding-right: 50px;
+}
+
+.about__subtitle{
+  padding: 20px 0;
+}
+
+.about__info{
+  padding-bottom: 15px;
+
+  line-height: 1.5;
+
+  color: #5b5b5c;
+}
+
+p:first-child{
+  color: green;
+}
+
+.about__img{
+  zoom: 70%;
+}
